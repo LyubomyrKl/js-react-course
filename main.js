@@ -35,4 +35,5 @@ const isChekced = true,
 console.log(isChekced && isClose); // true if isClose == false - false
 console.log(isChekced || isClose); //  is true even isClose == false
 
-const forNewCommit = 1;
+const forNewCommit = 1,
+      forSecondCommit = 2;  
