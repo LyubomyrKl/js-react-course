@@ -1,39 +1,20 @@
 'use strict';
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','');
 
-const category = 'toys';
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors:{},
+    genres: [],
+    privat: false
+};
 
- console.log(`https://someurl.com/${category}/5`);
+const a = prompt('Один из последних просмотреных фильмов',''),
+      b = +prompt('Насколько оцение его',''),
+      c = prompt('Один из последних просмотреных фильмов',''),
+      d = +prompt('Насколько оцение его','');
 
- console.log(`arr` + `-object`); // arr-object
- console.log( 4 + ' - object'); // 4 - object
- console.log( 4 + +'-object'); //NaN
- console.log( 4 + +'5'); // 9 
-git
+personalMovieDB.movies[a]=b;
+personalMovieDB.movies[c]=d;
 
-
-
-let incr = 10,
-    decr = 10;
-
-incr++;
-decr--;
-
-console.log(incr);
-console.log(decr);
-
-
-
-
-console.log(5%2); // 1 
-console.log(2*4 == "8"); // true
-console.log(2*4 === "8"); //false
-
-
-const isChekced = true,
-      isClose = true;
-  
-console.log(isChekced && isClose); // true if isClose == false - false
-console.log(isChekced || isClose); //  is true even isClose == false
-
-const forNewCommit = 1,
-      forSecondCommit = 2;  
+console.log(personalMovieDB);
